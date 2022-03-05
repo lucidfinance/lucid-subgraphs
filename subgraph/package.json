@@ -14,22 +14,22 @@
     "prep:aurora": "mustache config/aurora.json template.yaml > subgraph.yaml",
     "prep:moonbeam": "mustache config/moonbeam.json template.yaml > subgraph.yaml",
     "prep:arbitrum": "mustache config/arbitrum.json template.yaml > subgraph.yaml",
-    "deploy:rinkeby": "yarn prep:rinkeby && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucidfinance/lucid-contracts-rinkby",
-    "deploy:polygon": "yarn prep:polygon && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucidfinance/lucid-contracts-polygon",
-    "deploy:gnosis": "yarn prep:gnosis && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucidfinance/lucid-contracts-gnosis",
-    "deploy:avalanche": "yarn prep:avalanche && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucidfinance/lucid-contracts-avalanche",
-    "deploy:celo": "yarn prep:celo && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucid-network/lucidfinance-celo",
-    "deploy:aurora": "yarn prep:aurora && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucid-network/lucidfinance-aurora",
-    "deploy:moonbeam": "yarn prep:moonbeam && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucid-network/lucidfinance-moonbeam",
-    "deploy:arbitrum": "yarn prep:arbitrum && graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs lucid-network/lucidfinance-arbitrum"
+    "deploy:rinkeby": "yarn prep:rinkeby && graph deploy --studio lucid-rinkeby",
+    "deploy:polygon": "yarn prep:polygon && graph deploy  lucidfinance/lucid-contracts-polygon",
+    "deploy:gnosis": "yarn prep:gnosis && graph deploy  lucidfinance/lucid-contracts-gnosis",
+    "deploy:avalanche": "yarn prep:avalanche && graph deploy  lucidfinance/lucid-contracts-avalanche",
+    "deploy:celo": "yarn prep:celo && graph deploy  lucid-network/lucidfinance-celo",
+    "deploy:aurora": "yarn prep:aurora && graph deploy  lucid-network/lucidfinance-aurora",
+    "deploy:moonbeam": "yarn prep:moonbeam && graph deploy  lucid-network/lucidfinance-moonbeam",
+    "deploy:arbitrum": "yarn prep:arbitrum && graph deploy  lucid-network/lucidfinance-arbitrum"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.25.0",
-    "matchstick-as": "0.2.2",
+    "@graphprotocol/graph-cli": "^0.27.0",
+    "matchstick-as": "0.4.0",
     "mustache": "^4.2.0"
   },
   "dependencies": {
-    "@graphprotocol/graph-ts": "^0.24.0",
+    "@graphprotocol/graph-ts": "^0.25.0",
     "@lucidfinance/lucid-contracts": "^0.0.1",
     "as-base58": "^0.1.1"
   }
