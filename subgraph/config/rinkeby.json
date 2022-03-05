@@ -1,0 +1,8 @@
+{
+  "network": "rinkeby",
+  "apiVersion": "0.0.5",
+  "batchCreate": { "address": "0x5167692E93B4Ed0629A4791B4609aAddc7077f81", "startBlock": 10065495 },
+  "lucidBudgeteer": { "address": "0xEDA0A3bA3EE83eea4b9B6299b8F61b72E71BC680", "startBlock": 10265844 },
+  "lucidTxERC721": { "address": "0xA67D37fB6ffF5a2d3A9A415E5D3fB606C268e5db", "startBlock": 10265844 },
+  "lucidManager": { "address": "0xF870bb140c9c6F776eE1A26090f631f4f30390AF", "startBlock": 10265844 }
+}
